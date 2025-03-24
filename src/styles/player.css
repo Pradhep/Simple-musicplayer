@@ -1,0 +1,81 @@
+.player {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Time Control Section */
+.time-control {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.time-control input {
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.time-control p {
+    padding: 1rem;
+    font-weight: 700;
+}
+
+/* Play Control Section */
+.play-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 30%;
+}
+
+.play-control svg {
+    cursor: pointer;
+}
+
+/* Range Input Customization */
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+}
+
+/* Progress Track */
+.track {
+    background: lightblue;
+    width: 100%;
+    height: 1rem;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+/* Animated Progress Bar */
+.animate-track {
+    background: rgb(204, 204, 204);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0%);
+    pointer-events: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .time-control {
+        width: 90%;
+    }
+    .play-control {
+        width: 80%;
+    }
+}

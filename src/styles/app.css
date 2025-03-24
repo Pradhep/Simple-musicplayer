@@ -1,0 +1,33 @@
+/* Importing other styles */
+@import "./library.css";
+@import "./player.css";
+@import "./song.css";
+@import "./nav.css";
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy", sans-serif;
+}
+
+/* Body Background */
+body {
+    background: rgb(231, 235, 214);
+    background: linear-gradient(180deg, rgba(231, 235, 214, 1) 0%, rgba(55, 102, 44, 1) 100%);
+}
+
+/* Headings */
+h2, h3 {
+    color: #133a1b;
+}
+
+/* Font Weights */
+h3, h4 {
+    font-weight: 600;
+}
+
+button {
+    font-weight: 700;
+}
